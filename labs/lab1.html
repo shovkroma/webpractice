@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №1 | Основи HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Лабораторна робота №1: Основи HTML</h1>
+            <p>Роман Шовковий, група КІД-42</p>
+            <nav>
+                <ul>
+                    <!-- Посилання на головну сторінку зі списком робіт -->
+                    <li><a href="../index.html">← На головну (Список робіт)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Форма реєстрації користувача</h2>
+            <p>Заповніть усі обов'язкові поля, позначені зірочкою (*).</p>
+
+            <!-- 
+                Замініть URL в атрибуті action на вашу персональну адресу з webhook.site 
+            -->
+            <form action="https://webhook.site/8801ab21-8059-4ee7-9945-172cb5e8e943" method="POST">
+                
+                <!-- Ім'я користувача -->
+                <p>
+                    <label for="firstName">Ім'я *:</label><br>
+                    <input type="text" id="firstName" name="firstName" placeholder="Введіть ваше ім'я" required>
+                </p>
+
+                <!-- Прізвище користувача -->
+                <p>
+                    <label for="lastName">Прізвище *:</label><br>
+                    <input type="text" id="lastName" name="lastName" placeholder="Введіть ваше прізвище" required>
+                </p>
+
+                <!-- Електронна пошта -->
+                <p>
+                    <label for="userEmail">Адреса електронної пошти *:</label><br>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="example@mail.com" required>
+                </p>
+
+                <!-- Пароль -->
+                <p>
+                    <label for="userPassword">Пароль *:</label><br>
+                    <input type="password" id="userPassword" name="userPassword" required minlength="6">
+                </p>
+
+                <!-- Підтвердження паролю -->
+                <p>
+                    <label for="confirmPassword">Підтвердження паролю *:</label><br>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6">
+                </p>
+
+                <!-- Додаткове поле: Дата народження -->
+                <p>
+                    <label for="birthDate">Дата народження:</label><br>
+                    <input type="date" id="birthDate" name="birthDate">
+                </p>
+
+                <!-- Додаткове поле: Стать -->
+                <p>
+                    <label for="gender">Стать:</label><br>
+                    <select id="gender" name="gender">
+                        <option value="">-- Оберіть стать --</option>
+                        <option value="male">Чоловіча</option>
+                        <option value="female">Жіноча</option>
+                        <option value="other">Інше</option>
+                    </select>
+                </p>
+
+                <!-- Кнопка відправки форми на сервер -->
+                <p>
+                    <input type="submit" value="Зареєструватися">
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Роман Шовковий (КІД-42) | <a href="mailto:st8462708@stud.duikt.edu.ua">st8462708@stud.duikt.edu.ua</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
