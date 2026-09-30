@@ -103,3 +103,120 @@ footer {
 footer a {
     color: #2c3e50;
 }
+
+/* ==========================================================
+   Стилізація форми з Лабораторної №1 (Практична робота №2)
+   ========================================================== */
+
+/* Контейнер для центрування форми на сторінці */
+.form-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 
+   Параметри відповідно до завдання:
+   a. Колір фону та тексту
+   b. Ширина та внутрішні відступи
+   c. Закруглені кути
+   d. Тінь
+   e. Позиціювання
+*/
+.custom-form {
+    /* e. Позиціювання: відносне позиціювання, центрування по горизонталі */
+    position: relative;
+    margin: 40px auto;
+
+    /* b. Ширина та внутрішні відступи */
+    max-width: 480px;
+    width: 100%;
+    padding: 35px 30px;
+
+    /* a. Колір фону та тексту */
+    background-color: #ffffff;
+    color: #2c3e50;
+
+    /* c. Закруглені кути */
+    border-radius: 14px;
+
+    /* d. М'яка об'ємна тінь */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+
+    border: 1px solid #e2e8f0;
+}
+
+/* Оформлення заголовків всередині форми */
+.form-title {
+    font-size: 1.6rem;
+    color: #1a202c;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.form-subtitle {
+    font-size: 0.88rem;
+    color: #718096;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Стилізація груп полів введення */
+.form-field {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+/* Поля вводу і випадаючий список */
+.form-field input,
+.form-field select {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px; /* Закруглені кути полів */
+    font-size: 0.95rem;
+    color: #2d3748;
+    background-color: #f8fafc;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Підсвічування при фокусі */
+.form-field input:focus,
+.form-field select:focus {
+    border-color: #3182ce;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.25);
+}
+
+/* Кнопка відправки форми */
+.submit-btn {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    background-color: #3182ce;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(49, 130, 206, 0.35);
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.submit-btn:hover {
+    background-color: #2b6cb0;
+}
+
+.submit-btn:active {
+    transform: scale(0.99);
+}
